@@ -22,6 +22,11 @@ class HomeVC: UIViewController,CLLocationManagerDelegate,MKMapViewDelegate{
     var locationManager:CLLocationManager?
     var currentUserLocation:Location!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -103,6 +108,12 @@ class HomeVC: UIViewController,CLLocationManagerDelegate,MKMapViewDelegate{
         annotationView?.transform = CGAffineTransform(rotationAngle: CGFloat(arc4random_uniform(UInt32(360 * 180 / CGFloat.pi))))
         
         return annotationView
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let locationVC = segue.destination as? LocationVC{
+            locationVC.pickupLocation = currentUserLocation
+        }
     }
     
 }

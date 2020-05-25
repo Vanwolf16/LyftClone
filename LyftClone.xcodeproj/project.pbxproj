@@ -21,6 +21,7 @@
 		B42A0B7A247A004A00635D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42A0B78247A004A00635D60 /* Main.storyboard */; };
 		B42A0B7C247A004B00635D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42A0B7B247A004B00635D60 /* Assets.xcassets */; };
 		B42A0B7F247A004B00635D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42A0B7D247A004B00635D60 /* LaunchScreen.storyboard */; };
+		B4A31361247B641100DAE703 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A31360247B641100DAE703 /* LocationVC.swift */; };
 		B4B0F408247B492D003865C1 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B0F407247B492D003865C1 /* VehicleAnnotation.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		B42A0B7B247A004B00635D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42A0B7E247A004B00635D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B42A0B80247A004B00635D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4A31360247B641100DAE703 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		B4B0F407247B492D003865C1 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B4206699247A23210051E15A /* HomeVC.swift */,
+				B4A31360247B641100DAE703 /* LocationVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				B420669C247A282C0051E15A /* RoundedShadowBtn.swift in Sources */,
 				B420669A247A23210051E15A /* HomeVC.swift in Sources */,
 				B42A0B73247A004A00635D60 /* AppDelegate.swift in Sources */,
+				B4A31361247B641100DAE703 /* LocationVC.swift in Sources */,
 				B4206698247A1B130051E15A /* RideQuoteService.swift in Sources */,
 				B4206692247A190E0051E15A /* LocationService.swift in Sources */,
 				B4116CAC247A2FAD009D9232 /* LocationCell.swift in Sources */,
