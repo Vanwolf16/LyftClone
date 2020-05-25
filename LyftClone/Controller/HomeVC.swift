@@ -63,6 +63,46 @@ class HomeVC: UIViewController,CLLocationManagerDelegate,MKMapViewDelegate{
         let distance = 200.0
         let region = MKCoordinateRegion(center: userLocation.coordinate, latitudinalMeters: distance, longitudinalMeters: distance)
         mapView.setRegion(region, animated: true)
+        
+        //Create 3 vehicle annotation
+        
+        let lat = userLocation.coordinate.latitude
+        let lng = userLocation.coordinate.longitude
+        let offset = 0.00075
+        
+        let coord1 = CLLocationCoordinate2D(latitude: lat - offset, longitude: lng - offset)
+        
+        let coord2 = CLLocationCoordinate2D(latitude: lat, longitude: lng + offset)
+        let coord3 = CLLocationCoordinate2D(latitude: lat, longitude: lng - offset)
+        
+        mapView.addAnnotations([
+        VehicleAnnotation(coordinate: coord1),
+        VehicleAnnotation(coordinate: coord2),
+        VehicleAnnotation(coordinate: coord3)
+        ])
+        
+    }
+    //Car Image
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation{
+            return nil
+        }
+        
+        //Create our custom annotation view with vehicle image
+        let reuseIdentifier = "VehicleAnnotation"
+       var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
+        
+        if annotationView == nil{
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseIdentifier)
+        }else{
+            annotationView?.annotation = annotation
+        }
+        
+        annotationView?.image = UIImage(named: "car")
+        
+        annotationView?.transform = CGAffineTransform(rotationAngle: CGFloat(arc4random_uniform(UInt32(360 * 180 / CGFloat.pi))))
+        
+        return annotationView
     }
     
 }

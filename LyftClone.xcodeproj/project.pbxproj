@@ -21,6 +21,7 @@
 		B42A0B7A247A004A00635D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42A0B78247A004A00635D60 /* Main.storyboard */; };
 		B42A0B7C247A004B00635D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42A0B7B247A004B00635D60 /* Assets.xcassets */; };
 		B42A0B7F247A004B00635D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42A0B7D247A004B00635D60 /* LaunchScreen.storyboard */; };
+		B4B0F408247B492D003865C1 /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B0F407247B492D003865C1 /* VehicleAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B42A0B7B247A004B00635D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42A0B7E247A004B00635D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B42A0B80247A004B00635D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4B0F407247B492D003865C1 /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				B4206690247A19020051E15A /* Service */,
 				B420668E247A18C50051E15A /* Location.swift */,
 				B4206695247A1ACD0051E15A /* RideQuote.swift */,
+				B4B0F407247B492D003865C1 /* VehicleAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B0F408247B492D003865C1 /* VehicleAnnotation.swift in Sources */,
 				B42A0B77247A004A00635D60 /* ViewController.swift in Sources */,
 				B420669C247A282C0051E15A /* RoundedShadowBtn.swift in Sources */,
 				B420669A247A23210051E15A /* HomeVC.swift in Sources */,
